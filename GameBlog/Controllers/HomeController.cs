@@ -11,18 +11,19 @@ namespace GameBlog.Controllers
 {
     public class HomeController : Controller
     {
-        //private BlogDBContext _context;
+        private BlogDBContext _context;
 
-        //public HomeController(BlogDBContext context)
-        //{
-          //  _context = context;
-        //}
+        public HomeController(BlogDBContext context)
+        {
+            _context = context;
+        }
 
         // GET: /<controller>/
         public IActionResult Index()
         {
+            var model = _context.Categories.ToList();
             
-            return View();
+            return View(model);
         }
     }
 }
