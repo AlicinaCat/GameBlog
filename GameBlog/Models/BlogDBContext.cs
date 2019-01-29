@@ -6,6 +6,8 @@ namespace GameBlog.Models
 {
     public partial class BlogDBContext : DbContext
     {
+        public virtual DbSet<Category> Categories { get; set; }
+
         public BlogDBContext()
         {
         }
