@@ -19,6 +19,7 @@ namespace GameBlog.Models
 
         public virtual DbSet<Category> Category { get; set; }
         public virtual DbSet<Post> Post { get; set; }
+        public virtual DbSet<PostCategories> PostCategories { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -50,6 +51,19 @@ namespace GameBlog.Models
                     .IsRequired()
                     .HasMaxLength(50)
                     .IsUnicode(false);
+            });
+
+            modelBuilder.Entity<PostCategories>(entity =>
+            {
+                entity.HasOne(d => d.Category)
+                    .WithMany(p => p.PostCategories)
+                    .HasForeignKey(d => d.CategoryId)
+                    .HasConstraintName("FK__PostCateg__Categ__3F466844");
+
+                entity.HasOne(d => d.Post)
+                    .WithMany(p => p.PostCategories)
+                    .HasForeignKey(d => d.PostId)
+                    .HasConstraintName("FK__PostCateg__PostI__3E52440B");
             });
         }
     }

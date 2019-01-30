@@ -1,15 +1,16 @@
 ﻿<Properties StartupConfiguration="{8F3519DB-2504-4708-9F5B-D7E814023F58}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="GameBlog Status">
     <Files>
-      <File FileName="GameBlog/Startup.cs" Line="35" Column="71" />
-      <File FileName="GameBlog/Controllers/HomeController.cs" Line="41" Column="32" />
+      <File FileName="GameBlog/Startup.cs" Line="35" Column="63" />
+      <File FileName="GameBlog/Controllers/HomeController.cs" Line="6" Column="1" />
       <File FileName="GameBlog/Views/Home/Index.cshtml" Line="8" Column="18" />
       <File FileName="GameBlog/Program.cs" Line="1" Column="1" />
-      <File FileName="GameBlog/Models/Post.cs" Line="13" Column="44" />
+      <File FileName="GameBlog/ViewModels/PostViewModel.cs" Line="16" Column="9" />
+      <File FileName="GameBlog/Views/Home/CreateNewPost.cshtml" Line="6" Column="1" />
       <File FileName="GameBlog/Models/BlogDBContext.cs" Line="10" Column="9" />
-      <File FileName="GameBlog/ViewModels/PostViewModel.cs" Line="19" Column="1" />
-      <File FileName="GameBlog/Views/Home/CreateNewPost.cshtml" Line="4" Column="20" />
-      <File FileName="GameBlog/Models/Category.cs" Line="8" Column="6" />
+      <File FileName="GameBlog/Models/PostCategories.cs" Line="1" Column="1" />
+      <File FileName="GameBlog/Models/Post.cs" Line="18" Column="6" />
+      <File FileName="GameBlog/Models/Category.cs" Line="9" Column="3" />
       <File FileName="GameBlog Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>

@@ -23,7 +23,7 @@ namespace GameBlog.Controllers
         public IActionResult Index()
         {
             var model = _context.Categories.ToList();
-            
+
             return View(model);
         }
 
