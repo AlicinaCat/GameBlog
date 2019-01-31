@@ -11,6 +11,7 @@ namespace GameBlog.ViewModels
         public List<Category> PostCategories { get; set; }
         public List<SelectListItem> AllCategories { get; set; }
         public int CategoryId { get; set; }
+        //public DateTime PostDate { get; set; }
 
         public PostViewModel()
         {

@@ -22,3 +22,4 @@
 /Users/alicina/Documents/School/ASP.NET/Projects/Project1/GameBlog/GameBlog/obj/Debug/netcoreapp2.1/GameBlog.pdb
 /Users/alicina/Documents/School/ASP.NET/Projects/Project1/GameBlog/GameBlog/obj/Debug/netcoreapp2.1/GameBlog.csproj.CopyComplete
 /Users/alicina/Documents/School/ASP.NET/Projects/Project1/GameBlog/GameBlog/obj/Debug/netcoreapp2.1/Razor/Views/Home/CreateNewPost.g.cshtml.cs
+/Users/alicina/Documents/School/ASP.NET/Projects/Project1/GameBlog/GameBlog/obj/Debug/netcoreapp2.1/Razor/Views/Home/PostSubmitted.g.cshtml.cs

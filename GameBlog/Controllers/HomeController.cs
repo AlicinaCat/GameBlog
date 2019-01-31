@@ -43,20 +43,13 @@ namespace GameBlog.Controllers
         [HttpPost]
         public IActionResult CreateNewPost(PostViewModel newPost)
         {
+            DateTime date = DateTime.Now;
+            newPost.CurrentPost.Date = date;
             _context.Post.Add(newPost.CurrentPost);
              
             _context.SaveChanges();
 
-            ModelState.Clear();
-
-            var model = new PostViewModel();
-
-            foreach (var item in _context.Categories)
-            {
-                model.AllCategories.Add(new SelectListItem { Text = item.Name, Value = item.Id.ToString() });
-            }
-
-            return View(model);
+            return View("PostSubmitted", newPost);
         }
     }
 }

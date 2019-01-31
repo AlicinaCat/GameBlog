@@ -6,8 +6,7 @@ namespace GameBlog.Models
 {
     public partial class BlogDBContext : DbContext
     {
-
-        public virtual DbSet<Category> Categories { get; set; }
+        public virtual DbSet<Category> Categories {get; set;}
 
         public BlogDBContext()
         {
@@ -49,6 +48,8 @@ namespace GameBlog.Models
                     .IsRequired()
                     .HasMaxLength(2000)
                     .IsUnicode(false);
+
+                entity.Property(e => e.Date).HasColumnType("datetime");
 
                 entity.Property(e => e.Title)
                     .IsRequired()
