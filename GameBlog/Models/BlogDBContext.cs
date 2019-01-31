@@ -6,6 +6,7 @@ namespace GameBlog.Models
 {
     public partial class BlogDBContext : DbContext
     {
+
         public virtual DbSet<Category> Categories { get; set; }
 
         public BlogDBContext()
@@ -42,6 +43,8 @@ namespace GameBlog.Models
 
             modelBuilder.Entity<Post>(entity =>
             {
+                entity.Property(e => e.CategoryId).HasDefaultValueSql("((1))");
+
                 entity.Property(e => e.Content)
                     .IsRequired()
                     .HasMaxLength(2000)
@@ -51,6 +54,12 @@ namespace GameBlog.Models
                     .IsRequired()
                     .HasMaxLength(50)
                     .IsUnicode(false);
+
+                entity.HasOne(d => d.Category)
+                    .WithMany(p => p.Post)
+                    .HasForeignKey(d => d.CategoryId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("fk_CategoryID");
             });
 
             modelBuilder.Entity<PostCategories>(entity =>

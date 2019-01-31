@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using GameBlog.Models;
 using GameBlog.ViewModels;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -22,25 +23,40 @@ namespace GameBlog.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-            var model = _context.Categories.ToList();
+            //var model = _context.Categories.ToList();
 
-            return View(model);
+            return View();
         }
 
         public IActionResult CreateNewPost()
         {
-            return View();
+            var model = new PostViewModel();
+
+            foreach (var item in _context.Categories)
+            {
+                model.AllCategories.Add(new SelectListItem { Text = item.Name, Value = item.Id.ToString()});
+            }
+
+            return View(model);
         }
 
         [HttpPost]
         public IActionResult CreateNewPost(PostViewModel newPost)
         {
-            _context.Post.Add(newPost.CurrentPost);      //TODO Hellooo what about the categories??? 
+            _context.Post.Add(newPost.CurrentPost);
+             
             _context.SaveChanges();
 
             ModelState.Clear();
 
-            return View();
+            var model = new PostViewModel();
+
+            foreach (var item in _context.Categories)
+            {
+                model.AllCategories.Add(new SelectListItem { Text = item.Name, Value = item.Id.ToString() });
+            }
+
+            return View(model);
         }
     }
 }

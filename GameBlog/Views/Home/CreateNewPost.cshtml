@@ -10,6 +10,9 @@
     <label asp-for="CurrentPost.Content"></label>
     <textarea asp-for="CurrentPost.Content"></textarea>
     <br />
+    <select asp-for="@Model.CurrentPost.CategoryId" asp-items="Model.AllCategories"></select>
+
+    <br />
     <input type="submit" value="Save & Publish" />
 
 

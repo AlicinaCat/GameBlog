@@ -32,7 +32,7 @@ namespace GameBlog
             {
                 routes.MapRoute(
                     name: "Default",
-                    template: "{controller=Home}/{action=Index}");
+                    template: "{controller=Home}/{action=CreateNewPost}");
             });
 
         }

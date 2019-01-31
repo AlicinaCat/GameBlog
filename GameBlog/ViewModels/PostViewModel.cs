@@ -9,10 +9,13 @@ namespace GameBlog.ViewModels
     {
         public Post CurrentPost { get; set; }
         public List<Category> PostCategories { get; set; }
+        public List<SelectListItem> AllCategories { get; set; }
+        public int CategoryId { get; set; }
 
         public PostViewModel()
         {
             PostCategories = new List<Category>();
+            AllCategories = new List<SelectListItem>();
         }
     }
 }
