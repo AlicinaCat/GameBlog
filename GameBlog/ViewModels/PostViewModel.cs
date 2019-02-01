@@ -13,7 +13,7 @@ namespace GameBlog.ViewModels
         public List<SelectListItem> AllCategories { get; set; }
         public int CategoryId { get; set; }
         public List<Post> AllPosts { get; set; }
-        [DisplayName("Search post via title: ")]
+        [DisplayName("Search title or category: ")]
         public string SearchValue { get; set; }
 
         public PostViewModel()

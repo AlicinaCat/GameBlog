@@ -31,6 +31,11 @@ namespace GameBlog.Controllers
             PostViewModel model = new PostViewModel();
             model.AllPosts = query;
 
+            foreach (var item in model.AllPosts)
+            {
+                item.Category = (_context.Categories.Where(c => c.Id == item.CategoryId).ToList()).SingleOrDefault();
+            }
+
             return View(model);
         }
 
@@ -38,7 +43,7 @@ namespace GameBlog.Controllers
         public IActionResult Index(PostViewModel values)
         {
             PostViewModel model = new PostViewModel();
-            model.AllPosts = _context.Posts.Where(p => p.Title.Contains(values.SearchValue)).ToList();
+            model.AllPosts = _context.Posts.Where(p => p.Title.Contains(values.SearchValue) || p.Category.Name.Contains(values.SearchValue)).ToList();
 
             ModelState.Clear();
 
