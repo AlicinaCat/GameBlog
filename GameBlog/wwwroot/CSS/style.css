@@ -1,0 +1,87 @@
+﻿body {
+    background-color: #383d3b;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #bcb3bb;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: #cc00bb;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+a {
+    color: #50cce5;
+    padding-right: 3px;
+    padding-left: 3px;
+    text-decoration: none;
+}
+
+a:hover {
+        color: #3294a8;
+        padding-right: 3px;
+        padding-left: 3px;
+        text-decoration: none;
+    }
+
+ul {
+    margin-top: 0%;
+    list-style-position: inside;
+    list-style-type: none;
+    margin-right: 0;
+    padding-left: 0;
+}
+
+input[type=submit] {
+    background-color: #50cce5;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 2px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+li {
+    background-color: #595b5a;
+}
+
+input[type=text], select, textarea {
+    max-height: 20px;
+    max-width: 200px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none;
+    background-color: #595b5a;
+}
+
+
+input[type=submit]:hover {
+        color: #ffffff;
+        background-color: #3294a8;
+}
+
+#posts {
+    background-color: none;
+    margin-left: auto;
+    margin-right: auto;
+    position: center;
+    width: 60%;
+}
+
+container {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background: none;
+    position: relative;
+    z-index: 1000;
+}

@@ -1,5 +1,14 @@
 ﻿@model GameBlog.Models.Post
 
-<h1>@Model.Title</h1>
-<p>@Model.Content</p>
-<h6>@Model.Category.Name, @Model.Date</h6>
+<head>
+    <link href="@Url.Content("~/CSS/style.css")" rel="stylesheet" type="text/css" />
+</head>
+<div id="posts">
+    <ul>
+    <li>
+        <h1>@Model.Title</h1>
+        <p>@Model.Content</p>
+        <h6>@Model.Category.Name, @Model.Date</h6>
+        </li>
+        </ul>
+</div>

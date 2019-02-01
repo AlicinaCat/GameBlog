@@ -2,25 +2,35 @@
 @model GameBlog.ViewModels.PostViewModel
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
-<h1>Welcome to the blog!</h1>
+<head>
+    <link href="~/CSS/style.css" rel="stylesheet" type="text/css" />
+</head>
 
+<header>
+    <h1>Welcome to the blog!</h1>
+</header>
 
-<form asp-controller="Home" asp-action="Index" method="post">
-    <label asp-for="SearchValue"></label>
-    <input type="text" asp-for="SearchValue">
-    <input type="submit" value="Search" />
-</form>
+<div>
+        <form asp-controller="Home" asp-action="Index" method="post">
+            <input type="text" asp-for="SearchValue">
+            <input type="submit" value="Search" />
+        </form>
+</div>
 
-<ul>
-    @foreach (var post in Model.AllPosts)
-    {
-        <li>
-            <a asp-controller="Home" asp-action="ShowPost" asp-route-id="@post.Id">
-                <h3>@post.Title</h3>
-            </a>
-            @*<p>@post.Content</p>*@
-            <h6>@post.Date</h6>
+    <container>
+        <div id="posts">
+            <ul>
+                @foreach (var post in Model.AllPosts)
+        {
+            <li>
+                <a asp-controller="Home" asp-action="ShowPost" asp-route-id="@post.Id">
+                    <h3>@post.Title</h3>
+                </a>
+                @*<p>@post.Content</p>*@
+                <p>@post.Date</p>
 
-        </li>
-    }
-</ul>
+            </li>
+}
+            </ul>
+        </div>
+</container>
