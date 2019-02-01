@@ -1,5 +1,6 @@
 ﻿using System;
 using GameBlog.Models;
+using System.ComponentModel;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -12,7 +13,8 @@ namespace GameBlog.ViewModels
         public List<SelectListItem> AllCategories { get; set; }
         public int CategoryId { get; set; }
         public List<Post> AllPosts { get; set; }
-        //public DateTime PostDate { get; set; }
+        [DisplayName("Search post via title: ")]
+        public string SearchValue { get; set; }
 
         public PostViewModel()
         {

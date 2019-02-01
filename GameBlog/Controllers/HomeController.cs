@@ -34,6 +34,17 @@ namespace GameBlog.Controllers
             return View(model);
         }
 
+        [HttpPost]
+        public IActionResult Index(PostViewModel values)
+        {
+            PostViewModel model = new PostViewModel();
+            model.AllPosts = _context.Posts.Where(p => p.Title.Contains(values.SearchValue)).ToList();
+
+            ModelState.Clear();
+
+            return View(model);
+        }
+
         public IActionResult CreateNewPost()
         {
             var model = new PostViewModel();

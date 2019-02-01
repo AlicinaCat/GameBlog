@@ -4,6 +4,13 @@
 
 <h1>Welcome to the blog!</h1>
 
+
+<form asp-controller="Home" asp-action="Index" method="post">
+    <label asp-for="SearchValue"></label>
+    <input type="text" asp-for="SearchValue">
+    <input type="submit" value="Search" />
+</form>
+
 <ul>
     @foreach (var post in Model.AllPosts)
     {
