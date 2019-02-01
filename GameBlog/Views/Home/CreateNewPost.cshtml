@@ -1,15 +1,22 @@
 ﻿@model GameBlog.ViewModels.PostViewModel
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>
+
 <h1>Create new post</h1>
 
 <form asp-controller="Home" asp-action="CreateNewPost" method="post">
-    <label asp-for="CurrentPost.Title"></label>
+    <label asp-for="CurrentPost.Title"></label><br />
     <input type="text" asp-for="CurrentPost.Title" />
+    <span asp-validation-for="CurrentPost.Title"></span>
     <br />
-    <label asp-for="CurrentPost.Content"></label>
-    <textarea asp-for="CurrentPost.Content"></textarea>
+    <label asp-for="CurrentPost.Content"></label><br />
+    <textarea rows="20" cols="100" asp-for="CurrentPost.Content"></textarea>
+    <span asp-validation-for="CurrentPost.Content"></span>
     <br />
+    <label asp-for="CurrentPost.CategoryId"></label><br />
     <select asp-for="@Model.CurrentPost.CategoryId" asp-items="Model.AllCategories"></select>
 
     <br />

@@ -23,9 +23,12 @@ namespace GameBlog.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-            //var model = _context.Categories.ToList();
+            var list = _context.Posts.ToList();
+            var model = (from l in list
+                        orderby l.Date descending
+                        select l).ToList();
 
-            return View();
+            return View(model);
         }
 
         public IActionResult CreateNewPost()
@@ -50,6 +53,14 @@ namespace GameBlog.Controllers
             _context.SaveChanges();
 
             return View("PostSubmitted", newPost);
+        }
+
+        public IActionResult ShowPost(int id)
+        {
+            var model = _context.Posts.SingleOrDefault(p => p.Id == id);
+            model.Category = _context.Categories.SingleOrDefault(c => c.Id == model.CategoryId);
+
+            return View(model);
         }
     }
 }
