@@ -1,18 +1,19 @@
-﻿@model List<GameBlog.Models.Post>
+﻿
+@model GameBlog.ViewModels.PostViewModel
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
 <h1>Welcome to the blog!</h1>
 
 <ul>
-@foreach (var post in Model)
-{
-    <li>
-        <a asp-controller="Home" asp-action="ShowPost" asp-route-id="@post.Id">
-            <h3>@post.Title</h3>
-        </a>
-    @*<p>@post.Content</p>*@
-    <h6>@post.Date</h6>
+    @foreach (var post in Model.AllPosts)
+    {
+        <li>
+            <a asp-controller="Home" asp-action="ShowPost" asp-route-id="@post.Id">
+                <h3>@post.Title</h3>
+            </a>
+            @*<p>@post.Content</p>*@
+            <h6>@post.Date</h6>
 
-    </li>
-}
-    </ul>
+        </li>
+    }
+</ul>

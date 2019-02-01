@@ -24,9 +24,12 @@ namespace GameBlog.Controllers
         public IActionResult Index()
         {
             var list = _context.Posts.ToList();
-            var model = (from l in list
-                        orderby l.Date descending
-                        select l).ToList();
+            var query = (from l in list
+                         orderby l.Date descending
+                         select l).ToList();
+
+            PostViewModel model = new PostViewModel();
+            model.AllPosts = query;
 
             return View(model);
         }
@@ -37,7 +40,7 @@ namespace GameBlog.Controllers
 
             foreach (var item in _context.Categories)
             {
-                model.AllCategories.Add(new SelectListItem { Text = item.Name, Value = item.Id.ToString()});
+                model.AllCategories.Add(new SelectListItem { Text = item.Name, Value = item.Id.ToString() });
             }
 
             return View(model);
@@ -49,7 +52,7 @@ namespace GameBlog.Controllers
             DateTime date = DateTime.Now;
             newPost.CurrentPost.Date = date;
             _context.Post.Add(newPost.CurrentPost);
-             
+
             _context.SaveChanges();
 
             return View("PostSubmitted", newPost);

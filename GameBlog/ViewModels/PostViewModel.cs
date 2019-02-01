@@ -11,12 +11,14 @@ namespace GameBlog.ViewModels
         public List<Category> PostCategories { get; set; }
         public List<SelectListItem> AllCategories { get; set; }
         public int CategoryId { get; set; }
+        public List<Post> AllPosts { get; set; }
         //public DateTime PostDate { get; set; }
 
         public PostViewModel()
         {
             PostCategories = new List<Category>();
             AllCategories = new List<SelectListItem>();
+            AllPosts = new List<Post>();
         }
     }
 }

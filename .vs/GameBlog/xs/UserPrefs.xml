@@ -1,19 +1,20 @@
 ﻿<Properties StartupConfiguration="{8F3519DB-2504-4708-9F5B-D7E814023F58}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="GameBlog/Views/Home/ShowPost.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../../../../../usr/local/share/dotnet/sdk/NuGetFallbackFolder/microsoft.aspnetcore.razor.design/2.1.2/build/netstandard2.0/Microsoft.AspNetCore.Razor.Design.CodeGeneration.targets">
     <Files>
       <File FileName="GameBlog/Startup.cs" Line="35" Column="63" />
-      <File FileName="GameBlog/Controllers/HomeController.cs" Line="31" Column="32" />
-      <File FileName="GameBlog/Views/Home/Index.cshtml" Line="15" Column="10" />
+      <File FileName="GameBlog/Controllers/HomeController.cs" Line="36" Column="13" />
+      <File FileName="GameBlog/Views/Home/Index.cshtml" Line="25" Column="11" />
       <File FileName="GameBlog/Program.cs" Line="1" Column="1" />
-      <File FileName="GameBlog/ViewModels/PostViewModel.cs" Line="14" Column="11" />
+      <File FileName="GameBlog/ViewModels/PostViewModel.cs" Line="22" Column="41" />
       <File FileName="GameBlog/Views/Home/CreateNewPost.cshtml" Line="8" Column="1" />
       <File FileName="GameBlog/Models/BlogDBContext.cs" Line="10" Column="53" />
       <File FileName="GameBlog/Models/PostCategories.cs" Line="1" Column="1" />
-      <File FileName="GameBlog/Models/Post.cs" Line="22" Column="92" />
+      <File FileName="GameBlog/Models/Post.cs" Line="29" Column="48" />
       <File FileName="GameBlog/Models/Category.cs" Line="1" Column="1" />
       <File FileName="GameBlog Status" />
       <File FileName="GameBlog/Views/Home/PostSubmitted.cshtml" Line="9" Column="1" />
-      <File FileName="GameBlog/Views/Home/ShowPost.cshtml" Line="1" Column="8" />
+      <File FileName="GameBlog/Views/Home/ShowPost.cshtml" Line="5" Column="43" />
+      <File FileName="../../../../../../../../usr/local/share/dotnet/sdk/NuGetFallbackFolder/microsoft.aspnetcore.razor.design/2.1.2/build/netstandard2.0/Microsoft.AspNetCore.Razor.Design.CodeGeneration.targets" Line="121" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.GameBlog PreferredExecutionTarget="MonoDevelop.Default" />
