@@ -1,14 +1,21 @@
 ﻿@model GameBlog.Models.Post
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
 
 <head>
     <link href="@Url.Content("~/CSS/style.css")" rel="stylesheet" type="text/css" />
 </head>
-<div id="posts">
-    <ul>
-    <li>
-        <h1>@Model.Title</h1>
-        <p>@Model.Content</p>
-        <h6>@Model.Category.Name, @Model.Date</h6>
-        </li>
+<container>
+    <div id="posts">
+        <ul>
+            <li>
+                <h1>@Model.Title</h1>
+                <p>@Model.Content</p>
+                <br />
+                <h6>@Model.Category.Name, @Model.Date</h6>
+                <br /><br /><br />
+                <a asp-controller="Home" asp-action="Index">Back to main page</a>
+            </li>
         </ul>
-</div>
+    </div>
+</container>

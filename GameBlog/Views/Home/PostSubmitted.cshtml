@@ -1,12 +1,19 @@
 ﻿@model GameBlog.ViewModels.PostViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
 <head>
     <link href="@Url.Content("~/CSS/style.css")" rel="stylesheet" type="text/css" />
 </head>
 
-<h1>Post successfully published!</h1>
+<ul>
+    <li>
+        <h1>Post successfully published!</h1>
 
-<h2>@Model.CurrentPost.Title</h2>
-<p>@Model.CurrentPost.Content</p>
-<p>Posted @Model.CurrentPost.Date</p>
-
+        <h2>@Model.CurrentPost.Title</h2>
+        <p>@Model.CurrentPost.Content</p>
+        <br />
+        <p>Posted @Model.CurrentPost.Date</p>
+        <br /><br /><br />
+        <a asp-controller="Home" asp-action="Index">Back to main page</a>
+    </li>
+</ul>

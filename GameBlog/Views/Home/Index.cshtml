@@ -10,27 +10,35 @@
     <h1>Welcome to the blog!</h1>
 </header>
 
-<div>
+<container>
+    <div class="columns">
         <form asp-controller="Home" asp-action="Index" method="post">
             <input type="text" asp-for="SearchValue">
             <input type="submit" value="Search" />
         </form>
-</div>
 
-    <container>
-        <div id="posts">
+        <nav>
             <ul>
-                @foreach (var post in Model.AllPosts)
-        {
-            <li>
-                <a asp-controller="Home" asp-action="ShowPost" asp-route-id="@post.Id">
-                    <h3>@post.Title</h3>
-                </a>
-                @*<p>@post.Content</p>*@
-                <p>@post.Date</p>
-
-            </li>
-}
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-controller="Home" asp-action="CreateNewPost">Create new post</a></li>
             </ul>
-        </div>
+        </nav>
+    </div>
+
+
+    <div id="posts">
+        <ul>
+            @foreach (var post in Model.AllPosts)
+            {
+                <li>
+                    <a asp-controller="Home" asp-action="ShowPost" asp-route-id="@post.Id">
+                        <h3>@post.Title</h3>
+                    </a>
+                    @*<p>@post.Content</p>*@
+                    <p>@post.Date</p>
+
+                </li>
+            }
+        </ul>
+    </div>
 </container>

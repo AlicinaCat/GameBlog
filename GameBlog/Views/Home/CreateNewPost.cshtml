@@ -10,20 +10,25 @@
 
 <h1>Create new post</h1>
 
-<form asp-controller="Home" asp-action="CreateNewPost" method="post">
-    <label asp-for="CurrentPost.Title"></label><br />
-    <input type="text" asp-for="CurrentPost.Title" />
-    <span asp-validation-for="CurrentPost.Title"></span>
-    <br />
-    <label asp-for="CurrentPost.Content"></label><br />
-    <textarea rows="20" cols="100" asp-for="CurrentPost.Content"></textarea>
-    <span asp-validation-for="CurrentPost.Content"></span>
-    <br />
-    <label asp-for="CurrentPost.CategoryId"></label><br />
-    <select asp-for="@Model.CurrentPost.CategoryId" asp-items="Model.AllCategories"></select>
+<ul>
+    <li>
+        <form asp-controller="Home" asp-action="CreateNewPost" method="post">
+            <label asp-for="CurrentPost.Title"></label><br />
+            <input type="text" asp-for="CurrentPost.Title" />
+            <span asp-validation-for="CurrentPost.Title"></span>
+            <br />
+            <label asp-for="CurrentPost.Content"></label><br />
+            <textarea rows="20" cols="100" asp-for="CurrentPost.Content"></textarea>
+            <span asp-validation-for="CurrentPost.Content"></span>
+            <br />
+            <label asp-for="CurrentPost.CategoryId"></label><br />
+            <select asp-for="@Model.CurrentPost.CategoryId" asp-items="Model.AllCategories"></select>
 
-    <br />
-    <input type="submit" value="Save & Publish" />
+            <br />
 
-
-</form>
+            <input type="submit" value="Save & Publish" />
+        </form>
+        <br /><br /><br />
+        <a asp-controller="Home" asp-action="Index">Back to main page</a>
+    </li>
+</ul>
