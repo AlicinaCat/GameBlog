@@ -14,7 +14,7 @@
     <li>
         <form asp-controller="Home" asp-action="CreateNewPost" method="post">
             <label asp-for="CurrentPost.Title"></label><br />
-            <input type="text" asp-for="CurrentPost.Title" />
+            <input type="text" asp-for="CurrentPost.Title" id="title"/>
             <span asp-validation-for="CurrentPost.Title"></span>
             <br />
             <label asp-for="CurrentPost.Content"></label><br />
