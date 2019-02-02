@@ -51,7 +51,7 @@ using GameBlog;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(98, 101, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "204455f1bcf248468ede0c8d7d1082bd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3b0bdb83fbb14f979d532002c675cd4b", async() => {
                 BeginContext(104, 11, true);
                 WriteLiteral("\r\n    <link");
                 EndContext();
@@ -111,7 +111,7 @@ WriteAttributeValue("", 122, Url.Content("~/CSS/style.css"), 122, 31, false);
             WriteLiteral("</p>\r\n        <br /><br /><br />\r\n        ");
             EndContext();
             BeginContext(453, 65, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9dcab5babf7c4071985a6b442121f0a2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "66170ee0741d4a53b3030f1ef046d59d", async() => {
                 BeginContext(497, 17, true);
                 WriteLiteral("Back to main page");
                 EndContext();

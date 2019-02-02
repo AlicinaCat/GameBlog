@@ -29,7 +29,10 @@
             <input type="submit" value="Save & Publish" />
         </form>
 
+        <a asp-controller="Home" asp-action="DeletePost" asp-route-id="@Model.CurrentPost.Id">Delete post</a>
+
         <br /><br /><br />
+
         <a asp-controller="Home" asp-action="Index">Back to main page</a>
     </li>
 </ul>

@@ -106,5 +106,14 @@ namespace GameBlog.Controllers
 
             return View("PostSubmitted", editedPost);
         }
+
+        public IActionResult DeletePost(int id)
+        {
+            var post = _context.Posts.SingleOrDefault(p => p.Id == id);
+            _context.Remove(post);
+            _context.SaveChanges();
+
+            return View("PostDeleted");
+        }
     }
 }

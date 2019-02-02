@@ -12,7 +12,8 @@
                 <h1>@Model.Title</h1>
                 <p>@Model.Content</p>
                 <br />
-                <h4>@Model.Category.Name, @Model.Date</h4>
+                <h4 style="display: inline-block;">@Model.Category.Name, @Model.Date  ~ </h4>
+                <a asp-controller="Home" asp-action="EditPost" asp-route-id="@Model.Id">Edit post</a>
                 <br /><br /><br />
                 <a asp-controller="Home" asp-action="Index">Back to main page</a>
             </li>
