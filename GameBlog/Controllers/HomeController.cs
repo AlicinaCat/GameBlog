@@ -81,5 +81,30 @@ namespace GameBlog.Controllers
 
             return View(model);
         }
+
+        public IActionResult EditPost(int id)
+        {
+            PostViewModel model = new PostViewModel();
+            model.CurrentPost = _context.Posts.SingleOrDefault(p => p.Id == id);
+
+            foreach (var item in _context.Categories)
+            {
+                model.AllCategories.Add(new SelectListItem { Text = item.Name, Value = item.Id.ToString() });
+            }
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult SavePost(PostViewModel editedPost)
+        {
+            var oldPost = _context.Posts.SingleOrDefault(p => p.Id == editedPost.CurrentPost.Id);
+            editedPost.CurrentPost.Date = oldPost.Date;
+
+            _context.Entry(oldPost).CurrentValues.SetValues(editedPost.CurrentPost);
+            _context.SaveChanges();
+
+            return View("PostSubmitted", editedPost);
+        }
     }
 }
