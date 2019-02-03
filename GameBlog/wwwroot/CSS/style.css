@@ -12,6 +12,10 @@ h1 {
     margin-bottom: 0;
 }
 
+h4 {
+    color: #f252e4;
+}
+
 a {
     color: #50cce5;
     padding-right: 3px;
@@ -113,4 +117,15 @@ container {
 
 header {
     align-content: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon {
+    max-width: 20px;
+    display: inline-block;
 }

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "f070f5505e16e1c780ddc3e2b70b84be2ab1bbf0"
+    "signature": "a985edb6b5c201619780dc54b8398fb550a61737"
   },
   "compilationOptions": {
     "defines": [
@@ -30,7 +30,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.1",
           "Microsoft.EntityFrameworkCore.Tools": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.1"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.1",
+          "RichTextEditor": "8.2.0.9"
         },
         "runtime": {
           "GameBlog.dll": {}
@@ -394,6 +395,17 @@
         },
         "compile": {
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
+        }
+      },
+      "RichTextEditor/8.2.0.9": {
+        "runtime": {
+          "lib/RichTextEditor.dll": {
+            "assemblyVersion": "8.2.0.0",
+            "fileVersion": "8.2.0.0"
+          }
+        },
+        "compile": {
+          "lib/RichTextEditor.dll": {}
         }
       },
       "System.Composition/1.0.31": {
@@ -3620,6 +3632,13 @@
       "sha512": "sha512-KuqDbPzjOWbUM6gPMbkvdhlQ10roQAoMM7mNZ8hcY/fH+9J4Zc+qT8dLWoNzGyr0OrxQVdZdbSjy/fxwoICgGg==",
       "path": "nuget.frameworks/4.7.0",
       "hashPath": "nuget.frameworks.4.7.0.nupkg.sha512"
+    },
+    "RichTextEditor/8.2.0.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xsaFFi8SwykQ1BKaGaoaAAO1oi/vfBI4gAvjxnlCJA/vtUcZdh9o5k0VTl53c8pb6p25dkmjLOPD8kEtRvOD/Q==",
+      "path": "richtexteditor/8.2.0.9",
+      "hashPath": "richtexteditor.8.2.0.9.nupkg.sha512"
     },
     "System.Composition/1.0.31": {
       "type": "package",

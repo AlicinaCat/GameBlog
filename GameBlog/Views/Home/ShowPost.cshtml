@@ -14,8 +14,13 @@
                 <br />
                 <h4 style="display: inline-block;">@Model.Category.Name, @Model.Date  ~ </h4>
                 <a asp-controller="Home" asp-action="EditPost" asp-route-id="@Model.Id">Edit post</a>
+
                 <br /><br /><br />
+                            <img class="icon" src="@Url.Content("~/Pictures/psCirclePink.png")" alt="IMAGES" />
                 <a asp-controller="Home" asp-action="Index">Back to main page</a>
+
+                <br /><br />
+                <img class="center" width="100" src="@Url.Content("~/Pictures/controllerBlue.png")" alt="IMAGES" />
             </li>
         </ul>
     </div>

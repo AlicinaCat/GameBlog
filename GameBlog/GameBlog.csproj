@@ -12,6 +12,7 @@
     <Folder Include="ViewModels\" />
     <Folder Include="Views\Home\" />
     <Folder Include="wwwroot\CSS\" />
+    <Folder Include="wwwroot\Pictures\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,6 +22,27 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
     <PackageReference Include="EntityFramework" Version="6.2.0" />
+    <PackageReference Include="RichTextEditor" Version="8.2.0.9" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Remove="wwwroot\Pictures\gameController.jpg" />
+    <Content Remove="wwwroot\Pictures\NswitchBlue.png" />
+    <Content Remove="wwwroot\Pictures\NswitchPink.png" />
+    <Content Remove="wwwroot\Pictures\controllerBlue.png" />
+    <Content Remove="wwwroot\Pictures\psCirclePink.png" />
+    <Content Remove="wwwroot\Pictures\psCrossPink.png" />
+    <Content Remove="wwwroot\Pictures\psSquarePink.png" />
+    <Content Remove="wwwroot\Pictures\psTrianglePink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\Pictures\gameController.jpg" />
+    <None Include="wwwroot\Pictures\NswitchBlue.png" />
+    <None Include="wwwroot\Pictures\NswitchPink.png" />
+    <None Include="wwwroot\Pictures\controllerBlue.png" />
+    <None Include="wwwroot\Pictures\psCirclePink.png" />
+    <None Include="wwwroot\Pictures\psCrossPink.png" />
+    <None Include="wwwroot\Pictures\psSquarePink.png" />
+    <None Include="wwwroot\Pictures\psTrianglePink.png" />
+  </ItemGroup>
 </Project>

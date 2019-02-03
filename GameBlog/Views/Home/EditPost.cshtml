@@ -1,7 +1,6 @@
 ﻿@model GameBlog.ViewModels.PostViewModel
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
-
 <head>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.min.js"></script>
@@ -9,13 +8,14 @@
     <link href="~/CSS/style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<h1>Create new post</h1>
+<h1>Edit post</h1>
 
 <ul>
     <li>
         <form asp-controller="Home" asp-action="SavePost" method="post">
             <label asp-for="CurrentPost.Title"></label><br />
             <input type="text" asp-for="CurrentPost.Title" value="@Model.CurrentPost.Title" id="title" />
+
             <span asp-validation-for="CurrentPost.Title"></span>
             <br />
             <label asp-for="CurrentPost.Content"></label><br />
@@ -28,11 +28,11 @@
             <br />
             <input type="submit" value="Save & Publish" />
         </form>
-
+        <img class="icon" src="@Url.Content("~/Pictures/psSquarePink.png")" alt="IMAGES" />
         <a asp-controller="Home" asp-action="DeletePost" asp-route-id="@Model.CurrentPost.Id">Delete post</a>
 
         <br /><br /><br />
-
+                    <img class="icon" src="@Url.Content("~/Pictures/psCirclePink.png")" alt="IMAGES" />
         <a asp-controller="Home" asp-action="Index">Back to main page</a>
     </li>
 </ul>

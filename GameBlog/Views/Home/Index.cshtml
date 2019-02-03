@@ -7,7 +7,9 @@
 </head>
 
 <header>
-    <h1>Welcome to the blog!</h1>
+    <img style="display: inline-block" src="@Url.Content("~/Pictures/NswitchPink.png")" alt="IMAGES" />
+    <h1 style="display: inline-block">Welcome to the blog!</h1>
+
 </header>
 
 <container>
@@ -19,8 +21,13 @@
 
         <nav>
             <ul>
-                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
-                <li><a asp-controller="Home" asp-action="CreateNewPost">Create new post</a></li>
+                <li>
+                <img class="icon" src="@Url.Content("~/Pictures/psTrianglePink.png")" alt="IMAGES" />
+                <a asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+                <li>
+                    <img class="icon" src="@Url.Content("~/Pictures/psCrossPink.png")" alt="IMAGES" />
+                <a asp-controller="Home" asp-action="CreateNewPost">Create new post</a></li>
             </ul>
         </nav>
     </div>
