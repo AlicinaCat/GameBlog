@@ -34,6 +34,8 @@
     <Content Remove="wwwroot\Pictures\psCrossPink.png" />
     <Content Remove="wwwroot\Pictures\psSquarePink.png" />
     <Content Remove="wwwroot\Pictures\psTrianglePink.png" />
+    <Content Remove="wwwroot\Pictures\headerpic.png" />
+    <Content Remove="wwwroot\Pictures\controllerPink.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\Pictures\gameController.jpg" />
@@ -44,5 +46,7 @@
     <None Include="wwwroot\Pictures\psCrossPink.png" />
     <None Include="wwwroot\Pictures\psSquarePink.png" />
     <None Include="wwwroot\Pictures\psTrianglePink.png" />
+    <None Include="wwwroot\Pictures\headerpic.png" />
+    <None Include="wwwroot\Pictures\controllerPink.png" />
   </ItemGroup>
 </Project>

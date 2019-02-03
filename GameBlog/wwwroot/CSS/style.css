@@ -1,15 +1,16 @@
 ﻿body {
-    background-color: #383d3b;
+    background-color: #1d1b1c;
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
 }
 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
+    font-size: 70px;
     color: #f252e4;
     font-weight: bold;
     margin-bottom: 0;
+    padding-left: 20%;
 }
 
 h4 {
@@ -24,7 +25,7 @@ a {
 }
 
 a:hover {
-        color: #3294a8;
+        color: #ffffff;
         padding-right: 3px;
         padding-left: 3px;
         text-decoration: none;
@@ -39,20 +40,19 @@ ul {
 }
 
 li {
-    background-color: #595b5a;
+    background-color: #373335;
     padding-left: 10px;
     margin: 10px;
 }
 
 input[type=submit] {
-    background-color: #50cce5;
-    color: #ffffff;
-    font-weight: bold;
-    padding: 2px 2px;
+    color: #50cce5;
+    padding-right: 3px;
+    padding-left: 3px;
+    text-decoration: none;
+    background: none;
     border: none;
-    cursor: pointer;
-    font-size: 18px;
-
+    font-size: 16px;
 }
 
 input[type=text], select, textarea {
@@ -61,18 +61,17 @@ input[type=text], select, textarea {
     max-height: 25px;
     padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 0px;
+    border-radius: 10px;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
     resize: none;
-    background-color: #fff;
+    background-color: #bfbfbf;
     color: #000;
 }
 
 input[type=submit]:hover {
         color: #ffffff;
-        background-color: #3294a8;
 }
 
 textarea {
@@ -105,7 +104,7 @@ container {
 .columns {
     bottom: 0;
     width: 20%;
-    background-color: #595b5a;
+    background-color: #373335;
     padding: 10px;
     margin: 10px;
 }
@@ -128,4 +127,8 @@ header {
 .icon {
     max-width: 20px;
     display: inline-block;
+}
+
+.headerpic {
+    max-width: 80%;
 }

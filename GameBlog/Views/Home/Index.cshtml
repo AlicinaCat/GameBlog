@@ -7,29 +7,40 @@
 </head>
 
 <header>
-    <img style="display: inline-block" src="@Url.Content("~/Pictures/NswitchPink.png")" alt="IMAGES" />
-    <h1 style="display: inline-block">Welcome to the blog!</h1>
+    <img class="headerpic" src="@Url.Content("~/Pictures/headerpic.png")" alt="IMAGES" />
+    <h1 style="display: inline-block">Pink Controller</h1> 
+    <img width="50" src="@Url.Content("~/Pictures/controllerPink.png")" alt="IMAGES" />
+
 
 </header>
 
 <container>
     <div class="columns">
-        <form asp-controller="Home" asp-action="Index" method="post">
-            <input type="text" asp-for="SearchValue">
-            <input type="submit" value="Search" />
-        </form>
-
-        <nav>
+            <nav>
             <ul>
+                <li>
+                <form asp-controller="Home" asp-action="Index" method="post">
+                <input type="text" placeholder="Title or category..." asp-for="SearchValue"><br />
+                <img class="icon" src="@Url.Content("~/Pictures/psSquarePink.png")" alt="IMAGES" />
+                <input type="submit" value="Search" />
+                 </form>
+                </li>
+
+
                 <li>
                 <img class="icon" src="@Url.Content("~/Pictures/psTrianglePink.png")" alt="IMAGES" />
                 <a asp-controller="Home" asp-action="Index">Home</a>
                 </li>
                 <li>
                     <img class="icon" src="@Url.Content("~/Pictures/psCrossPink.png")" alt="IMAGES" />
-                <a asp-controller="Home" asp-action="CreateNewPost">Create new post</a></li>
+                <a asp-controller="Home" asp-action="CreateNewPost">New post</a></li>
+                <li>
+                    <img class="icon" src="@Url.Content("~/Pictures/psCirclePink.png")" alt="IMAGES" />
+                    <a asp-controller="Home" asp-action="Credits">Credits</a>
+                </li>
             </ul>
         </nav>
+            <img class="center" width="100" src="@Url.Content("~/Pictures/NswitchPink.png")" alt="IMAGES" />
     </div>
 
 

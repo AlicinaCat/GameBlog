@@ -26,6 +26,7 @@
             <select asp-for="@Model.CurrentPost.CategoryId" value="@Model.CurrentPost.CategoryId" asp-items="Model.AllCategories"></select>
             <input type="hidden" asp-for="@Model.CurrentPost.Id" value="@Model.CurrentPost.Id" />
             <br />
+            <img class="icon" src="@Url.Content("~/Pictures/psCrossPink.png")" alt="IMAGES" />
             <input type="submit" value="Save & Publish" />
         </form>
         <img class="icon" src="@Url.Content("~/Pictures/psSquarePink.png")" alt="IMAGES" />
