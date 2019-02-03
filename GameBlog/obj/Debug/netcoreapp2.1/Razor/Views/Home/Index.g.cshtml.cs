@@ -67,12 +67,12 @@ using GameBlog;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(100, 85, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0d6058d5a73c4da38d8007e78101baa0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2083df8058194d0f81d75e5ce72c6268", async() => {
                 BeginContext(106, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(112, 64, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "6a1cb0ad96d845818779a773c6ba4072", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "06c87b2e045546b7b7978bc4f5d5e156", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -127,12 +127,12 @@ WriteAttributeValue("", 376, Url.Content("~/Pictures/controllerPink.png"), 376, 
             WriteLiteral(" alt=\"IMAGES\" />\r\n\r\n\r\n</header>\r\n\r\n<container>\r\n    <div class=\"columns\">\r\n            <nav>\r\n            <ul>\r\n                <li>\r\n                ");
             EndContext();
             BeginContext(572, 344, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8d09990eae3d43979efbbbd1b757502e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e1338e4a62cc46178a4af3fefb1488f2", async() => {
                 BeginContext(633, 18, true);
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(651, 76, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "69f1923194e84c51b1ec095bfa5867f0", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e05a637c807e48b888824e11d11a68fd", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -201,7 +201,7 @@ WriteAttributeValue("", 1006, Url.Content("~/Pictures/psTrianglePink.png"), 1006
             WriteLiteral(" alt=\"IMAGES\" />\r\n                ");
             EndContext();
             BeginContext(1086, 52, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6da55bd1678c4d84bf63fad675644fc0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e7fe8c6729ca460a8b655d6b7ec2379e", async() => {
                 BeginContext(1130, 4, true);
                 WriteLiteral("Home");
                 EndContext();
@@ -235,7 +235,7 @@ WriteAttributeValue("", 1228, Url.Content("~/Pictures/psCrossPink.png"), 1228, 4
             WriteLiteral(" alt=\"IMAGES\" />\r\n                ");
             EndContext();
             BeginContext(1305, 64, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cebfee2ded6046fa99a81381988f57d5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1f786435558a485c935a814e6725ce24", async() => {
                 BeginContext(1357, 8, true);
                 WriteLiteral("New post");
                 EndContext();
@@ -269,7 +269,7 @@ WriteAttributeValue("", 1441, Url.Content("~/Pictures/psCirclePink.png"), 1441, 
             WriteLiteral(" alt=\"IMAGES\" />\r\n                    ");
             EndContext();
             BeginContext(1523, 57, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cef207430bb34dc7930827d74f574faf", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "78326adf350b4a5bb1bed60d76c0e747", async() => {
                 BeginContext(1569, 7, true);
                 WriteLiteral("Credits");
                 EndContext();
@@ -312,7 +312,7 @@ WriteAttributeValue("", 1689, Url.Content("~/Pictures/NswitchPink.png"), 1689, 4
             WriteLiteral("                <li>\r\n                    ");
             EndContext();
             BeginContext(1910, 143, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "301665b206c94247a798dcb8539e7bf2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c9dd5921db1f4109b6c33a1deed8ceec", async() => {
                 BeginContext(1981, 30, true);
                 WriteLiteral("\r\n                        <h3>");
                 EndContext();
