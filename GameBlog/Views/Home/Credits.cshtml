@@ -1,0 +1,33 @@
+﻿
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+<head>
+    <link href="@Url.Content("~/CSS/style.css")" rel="stylesheet" type="text/css" />
+</head>
+
+<container>
+    <div id="posts">
+        <ul>
+            <li>
+                <h1>Credits</h1>
+                <p>Pink controller ~ 2019</p>
+                <p>This website was made as a school project, it is not intended to go online.</p>
+                <ul>
+                    <li>Header and website by <a target="_blank" href="http://alicina.se">AlicinaCat</a></li>
+                    <li>Icons: <a href="http://icons.iconarchive.com/" target="_blank">IconArchive</a></li>
+                    <li>Game reviews: <a href="http://ign.com/" target="_blank">IGN</a></li>
+                    </ul>
+                <br />
+                
+
+                <br />
+                <img class="icon" src="@Url.Content("~/Pictures/psCirclePink.png")" alt="IMAGES" />
+                <a asp-controller="Home" asp-action="Index">Back to main page</a>
+
+                <br /><br />
+                <img class="center" width="100" src="@Url.Content("~/Pictures/controllerPink.png")" alt="IMAGES" />
+            </li>
+        </ul>
+    </div>
+</container>

@@ -115,5 +115,10 @@ namespace GameBlog.Controllers
 
             return View("PostDeleted");
         }
+
+        public IActionResult Credits()
+        {
+            return View();
+        }
     }
 }

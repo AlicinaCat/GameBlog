@@ -51,7 +51,7 @@ using GameBlog;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(98, 101, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1e1ae06cac2143df88bcec491f446afb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b47b3bc13c6142a58257cabab400b8a9", async() => {
                 BeginContext(104, 11, true);
                 WriteLiteral("\r\n    <link");
                 EndContext();
@@ -121,7 +121,7 @@ WriteAttributeValue("", 488, Url.Content("~/Pictures/psCirclePink.png"), 488, 43
             WriteLiteral(" alt=\"IMAGES\" />\r\n        ");
             EndContext();
             BeginContext(558, 65, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "acad32c9756f46d8b4b9dbdf5b87a610", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e38720dbb211406fa179c4c361c87e95", async() => {
                 BeginContext(602, 17, true);
                 WriteLiteral("Back to main page");
                 EndContext();

@@ -27,3 +27,4 @@
 /Users/alicina/Documents/School/ASP.NET/Projects/Project1/GameBlog/GameBlog/obj/Debug/netcoreapp2.1/Razor/Views/_ViewImports.g.cshtml.cs
 /Users/alicina/Documents/School/ASP.NET/Projects/Project1/GameBlog/GameBlog/obj/Debug/netcoreapp2.1/Razor/Views/Home/EditPost.g.cshtml.cs
 /Users/alicina/Documents/School/ASP.NET/Projects/Project1/GameBlog/GameBlog/obj/Debug/netcoreapp2.1/Razor/Views/Home/PostDeleted.g.cshtml.cs
+/Users/alicina/Documents/School/ASP.NET/Projects/Project1/GameBlog/GameBlog/obj/Debug/netcoreapp2.1/Razor/Views/Home/Credits.g.cshtml.cs
